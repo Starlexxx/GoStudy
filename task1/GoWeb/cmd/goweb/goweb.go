@@ -1,9 +1,9 @@
 package main
 
 import (
+	"GoStudy/task1/GoWeb/pkg/crawler"
+	"GoStudy/task1/GoWeb/pkg/crawler/spider"
 	"flag"
-	"goweb/pkg/crawler"
-	"goweb/pkg/crawler/spider"
 	"log"
 	"strings"
 )
