@@ -1,9 +1,9 @@
-// Package spider represents a web site content scanner.
-// It allows to get a list of links and page titles inside the web site by its URL.
+// Package spider represents a website content scanner.
+// It allows to get a list of links and page titles inside the website by its URL.
 package spider
 
 import (
-	"goweb/pkg/crawler"
+	"GoStudy/task2/GoWeb/pkg/crawler"
 	"net/http"
 	"strings"
 
@@ -11,11 +11,15 @@ import (
 )
 
 // Service - search robot service.
-type Service struct{}
+type Service struct {
+	id int
+}
 
 // New - constructor of search robot service.
 func New() *Service {
 	s := Service{}
+	s.id = 0
+
 	return &s
 }
 
@@ -30,7 +34,9 @@ func (s *Service) Scan(url string, depth int) (data []crawler.Document, err erro
 	}
 
 	for url, title := range pages {
+		s.id++
 		item := crawler.Document{
+			ID:    s.id,
 			URL:   url,
 			Title: title,
 		}

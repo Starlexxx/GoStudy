@@ -1,6 +1,6 @@
 package membot
 
-import "goweb/pkg/crawler"
+import "GoStudy/task1/GoWeb/pkg/crawler"
 
 // Service - imitation of a search robot service.
 type Service struct{}
