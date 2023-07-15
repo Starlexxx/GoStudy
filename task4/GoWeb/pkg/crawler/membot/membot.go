@@ -1,6 +1,6 @@
 package membot
 
-import "GoStudy/task2/GoWeb/pkg/crawler"
+import "GoStudy/task4/GoWeb/pkg/crawler"
 
 // Service - imitation of a search robot service.
 type Service struct{}
@@ -13,7 +13,6 @@ func New() *Service {
 
 // Scan - returns a pre-prepared data set
 func (s *Service) Scan(url string, depth int) ([]crawler.Document, error) {
-
 	data := []crawler.Document{
 		{
 			ID:    0,

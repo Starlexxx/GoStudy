@@ -3,7 +3,7 @@
 package spider
 
 import (
-	"GoStudy/task2/GoWeb/pkg/crawler"
+	"GoStudy/task4/GoWeb/pkg/crawler"
 	"net/http"
 	"strings"
 

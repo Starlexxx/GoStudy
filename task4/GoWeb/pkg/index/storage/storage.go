@@ -4,15 +4,13 @@
 package storage
 
 import (
-	"GoStudy/task2/GoWeb/pkg/crawler"
+	"GoStudy/task4/GoWeb/pkg/crawler"
 	"errors"
 	"sort"
 	"strings"
 )
 
-var (
-	NotFound = errors.New("not found")
-)
+var NotFound = errors.New("not found")
 
 // Index - index where key is a document title word and value is a list of document IDs.
 type Index struct {

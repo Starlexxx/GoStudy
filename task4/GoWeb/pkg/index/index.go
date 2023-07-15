@@ -1,6 +1,6 @@
 package index
 
-import "GoStudy/task2/GoWeb/pkg/crawler"
+import "GoStudy/task4/GoWeb/pkg/crawler"
 
 // Index - search index.
 // Stores information about documents.
