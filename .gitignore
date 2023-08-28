@@ -20,3 +20,6 @@
 
 # Ignore go workspace file
 go.work
+
+# ignore repository file
+*/GoWeb/pkg/repository/file/repository.txt
